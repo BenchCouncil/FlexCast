@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug Exp_Imputation (Time-Series-Library)",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/run.py",
+        "console": "integratedTerminal",
+        "justMyCode": false,
+        "env": {
+          "CUDA_VISIBLE_DEVICES": "0"
+        },
+        "args": [
+          "--task_name", "imputation",
+          "--is_training", "1",
+          "--root_path", "../zy_dynamic-token/dataset/ETT-small/",
+          "--data_path", "ETTh1.csv",
+          "--model_id", "ETTh1_mask_0.125",
+          "--mask_rate", "0.125",
+          "--model", "PatchTST_normal",
+          "--data", "ETTh1",
+          "--features", "M",
+          "--seq_len", "96",
+          "--label_len", "0",
+          "--pred_len", "0",
+          "--d_model", "64",
+          "--d_ff", "32",
+          "--e_layers", "2",
+          "--d_layers", "1"
+        ]
+      }
+    ]
+  }

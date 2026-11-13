@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+*.so
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# IDE
+.idea
+.vscode/
+
+# Data & checkpoints
+/dataset/
+/data/
+checkpoints/
+*.pth
+logs/
+*.log
+
+# OS
+.DS_Store
